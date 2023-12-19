@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import gptlogo from './assets/chatgpt.svg'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="sidebar">
+        <div className="upperside">
+          <div className="uppersideTop">
+            <img src={gptlogo} alt="" className="logo" />
+            <span className="brand">Chat GPT</span>
+            <button className="midbtn">
+              <img src="" alt="" className="addbtn" />
+              New Chat
+            </button>
+            <div className="uppersideBottom"></div>
+            <button className="quary">
+              <img src="" alt="" />
+              What is programing ?
+            </button>
+            <button className="quary">
+              <img src="" alt="" />
+              What is programing ?
+            </button>
+          </div>
+        </div>
+        <div className="lowerside"></div>
+      </div>
+      <div className="main"></div>
     </div>
   );
 }
